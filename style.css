@@ -1,0 +1,112 @@
+/* Reset and base styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to top, #a2d2ff, #cdb4db);
+    color: #222;
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  header {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  nav a {
+    margin: 0 1rem;
+    color: #ffddc1;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    color: #fcd5ce;
+  }
+  
+  /* Scenery Background Section */
+  #scenery {
+    position: relative;
+    height: 300px;
+    background: linear-gradient(to top, #57cc99, #80ed99);
+    overflow: hidden;
+  }
+  
+  .sun {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 80px;
+    background: #ffd166;
+    border-radius: 50%;
+    box-shadow: 0 0 30px #ffd166;
+  }
+  
+  .mountains {
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(to bottom, #6a4c93, #4a3f6b);
+    clip-path: polygon(0 100%, 20% 30%, 40% 100%, 60% 40%, 80% 100%, 100% 20%, 100% 100%);
+  }
+  
+  .grass {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background: #38b000;
+  }
+  
+  /* Section Cards */
+  .card {
+    background: white;
+    margin: 2rem auto;
+    padding: 2rem;
+    width: 90%;
+    max-width: 700px;
+    border-radius: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .card ul {
+    list-style: none;
+    padding-left: 1rem;
+  }
+  
+  .card ul li::before {
+    content: "🌟 ";
+  }
+  
+  /* Colorful card */
+  .colorful {
+    background: linear-gradient(135deg, #ff9a8b, #fcb69f);
+    color: white;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: #222;
+    color: white;
+    margin-top: 2rem;
+  }
+  
